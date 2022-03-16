@@ -1,9 +1,10 @@
 {
   "name": "kanbanboard",
   "version": "1.0.0",
+  "description": "kanbanboard : Component - React Event",
   "main": "index.js",
   "scripts": {
-    "debug": "npx webpack serve --progress --mode development",
+    "debug": "npx webpack serve --config config/webpack.config.js --progress --mode development",
     "build": "npx webpack"
   },
   "keywords": [],
@@ -11,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
