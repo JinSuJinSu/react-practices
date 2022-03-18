@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
 import styles from './assets/css/TaskList.css'
+import Task from './Task';
 
 const TaskList = ({tasks}) => {
+
+  const [isChecked, setIsChecked] = useState(true);
+
+  const onChangIsChecked= function(e){
+    setIsChecked(!isChecked)
+ }
+
   return (
     <div className={styles.TaskList}>
         <ul>
-        {tasks.map((e,i) => {
-            return (<li key={i} className={styles.TaskList__Task}>
-              <input type='checkbox' checked={e.done} />
-              {e.name}
-              <a href='#' className={styles.TaskList__Task__remove}></a>
-              </li>)
-        })
-        }
+            {tasks.map(task => <Task key={task.no} name={task.name} done={task.done} /> )}
         </ul>
     </div>
   )
