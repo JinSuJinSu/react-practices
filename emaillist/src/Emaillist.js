@@ -2,12 +2,18 @@ import React, { Fragment } from 'react'
 import styles from './assets/scss/Emaillist.scss'
 import Email from './Email'
 
-const Emaillist = ({emalis}) => {
+const Emaillist = ({emails}) => {
   return (
         <ul className={styles.Emaillist}>
-            {emalis.map(data=><Email name={data.firstName+data.lastName} email={data.email}/>)}
+        {
+            emails.map(email => <Email
+                                    key={email.no}
+                                    firstName={email.firstName}
+                                    lastName={email.lastName}
+                                    email={email.email} />)
+        }
         </ul>
-  )
+    )
 }
 
 export default Emaillist
