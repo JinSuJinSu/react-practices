@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
 		//1. 로깅
 		StringWriter errors = new StringWriter();
 		e.printStackTrace(new PrintWriter(errors));
-		log.error(errors.toString());
+//		log.error(errors.toString());
 		
 		//2. JSON 응답
 		return ResponseEntity.status(HttpStatus.OK).body(JsonResult.fail(errors.toString()));
