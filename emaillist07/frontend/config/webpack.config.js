@@ -21,7 +21,7 @@ module.exports = function(env) {
                 use: [
                     'style-loader',
                     {loader: 'css-loader', options: {modules: true}},
-                    'sass-loader'
+                    {loader: 'sass-loader', options: {modules: true}},
                 ]
             }, {
                 test: /\.(png|git|jpe?g|svg|ico|tiff?|bmp)$/i,

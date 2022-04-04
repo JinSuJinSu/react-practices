@@ -86,12 +86,10 @@
 						<exclude>
 							<groupId>org.springframework.boot</groupId>
 							<artifactId>spring-boot-devtools</artifactId>
-						</exclude>
+						</exclude>						
 					</excludes>
 				</configuration>
 			</plugin>
-			
-			<!-- npm plugin -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -113,9 +111,7 @@
 					<environmentVariables>
 					</environmentVariables>
 				</configuration>
-				
 			</plugin>
-			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -136,8 +132,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			
+			</plugin>						
 		</plugins>
 	</build>
 
