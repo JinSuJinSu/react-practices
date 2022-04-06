@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 //@CrossOrigin(origins={"http://localhost:9090"}, allowedHeaders="*", allowCredentials ="false", 
 //methods= {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
-@CrossOrigin("*")
+@CrossOrigin
 public class ApiController {
 	
 	@Autowired
