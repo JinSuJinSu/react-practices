@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(async () => {
       try{
-          const response = await fetch('http://localhost:8080/api', {
+          const response = await fetch('/api', {
           method: 'get',
           headers: {
             'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const App = () => {
 
   const notifyKeywordChange = async function(keyword) {
     try{
-      const response = await fetch(`http://localhost:8080/api?kw=${keyword}`, {
+      const response = await fetch(`/api?kw=${keyword}`, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',
